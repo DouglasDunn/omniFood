@@ -93,4 +93,21 @@ $(document).ready(function() {
 
   });
 
+  /* Maps */
+  var map = new GMaps({
+    div: '.map',
+    lat: 37.2972061,
+    lng: -121.85,
+    zoom: 12
+  });
+
+  map.addMarker({
+    lat: 37.2972061,
+    lng: -121.9574968,
+    title: 'San Jose',
+    infoWindow: {
+      content: '<p>Our San Jose HQ</p>'
+    }
+  });
+
 });
